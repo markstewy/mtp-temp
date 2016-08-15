@@ -258,9 +258,14 @@ footer {
 .submitbtn.hvrr:hover {
     background-color: #e8e5e5;
 }
+
+.mtp.titletxt {
+    padding-top: 5vh;
+}
 @media(min-width:650px) {
 
 .mtp.titletxt {
     font-size: 90px;
+    padding-top: 25vh;
 }
 }
