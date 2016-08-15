@@ -8,9 +8,9 @@ var mongoose = require('mongoose');
 var config = require('./config');
 
 // CONTROLLERS //
-var ToDoCtrl = require('./controllers/ToDoCtrl');
-var UserCtrl = require('./controllers/UserCtrl');
-var AdminCtrl = require('./controllers/AdminCtrl');
+// var ToDoCtrl = require('./controllers/ToDoCtrl');
+// var UserCtrl = require('./controllers/UserCtrl');
+// var AdminCtrl = require('./controllers/AdminCtrl');
 
 // SERVICES //
 var passport = require('./services/passport');
