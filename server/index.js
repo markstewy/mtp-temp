@@ -42,31 +42,31 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 //PASSPORT ENDPOINTS
-app.post('/login', passport.authenticate('local', {
-  successRedirect: '/me'
-}));
-app.get('/logout', function(req, res, next) {
-  req.logout();
-  return res.status(200).send('logged out');
-});
+// app.post('/login', passport.authenticate('local', {
+//   successRedirect: '/me'
+// }));
+// app.get('/logout', function(req, res, next) {
+//   req.logout();
+//   return res.status(200).send('logged out');
+// });
 
 //REGISTER
 
 
 
 // USER ENDPOINTS TO DO
-app.get('/getToDo', ToDoCtrl.readToDo);
-app.post('/addToDo', isAuthed, ToDoCtrl.createToDo);
-app.put('/updateToDo/:id', isAuthed, ToDoCtrl.update);
-app.delete('/deleteToDo/:id', isAuthed, ToDoCtrl.deleteToDo);
+// app.get('/getToDo', ToDoCtrl.readToDo);
+// app.post('/addToDo', isAuthed, ToDoCtrl.createToDo);
+// app.put('/updateToDo/:id', isAuthed, ToDoCtrl.update);
+// app.delete('/deleteToDo/:id', isAuthed, ToDoCtrl.deleteToDo);
 
 // ADMIN ENDPOINTS POSTS
-app.get('/api/posts', AdminCtrl.getPostData)
-app.get('/api/projects', AdminCtrl.getProjectData)
-app.post('/api/addposts', isAuthed, AdminCtrl.addPost)
-app.post('/api/addprojects', isAuthed, AdminCtrl.addProject)
-app.delete('/api/deletepost/:id', isAuthed, AdminCtrl.deletePost)
-app.delete('/api/deleteproject/:id', isAuthed, AdminCtrl.deleteProject)
+// app.get('/api/posts', AdminCtrl.getPostData)
+// app.get('/api/projects', AdminCtrl.getProjectData)
+// app.post('/api/addposts', isAuthed, AdminCtrl.addPost)
+// app.post('/api/addprojects', isAuthed, AdminCtrl.addProject)
+// app.delete('/api/deletepost/:id', isAuthed, AdminCtrl.deletePost)
+// app.delete('/api/deleteproject/:id', isAuthed, AdminCtrl.deleteProject)
 
 
 
