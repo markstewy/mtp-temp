@@ -7,10 +7,6 @@ var mongoose = require('mongoose');
 // CONFIG //
 var config = require('./config');
 
-// CONTROLLERS //
-// var ToDoCtrl = require('./controllers/ToDoCtrl');
-// var UserCtrl = require('./controllers/UserCtrl');
-// var AdminCtrl = require('./controllers/AdminCtrl');
 
 // SERVICES //
 var passport = require('./services/passport');
@@ -55,10 +51,7 @@ app.get('/logout', function(req, res, next) {
 });
 
 //REGISTER
-app.post('/register', UserCtrl.register);
-app.get('/user', UserCtrl.read);
-app.get('/me', isAuthed, UserCtrl.me);
-app.put('/user/:_id', isAuthed, UserCtrl.update);
+
 
 
 // USER ENDPOINTS TO DO
